@@ -15,5 +15,8 @@ int main(void)
 
 	return (0);
 }
+<<<<<<< HEAD
  
 \n
+=======
+>>>>>>> 01216725e842ce67a36d224e0278c38adc135e67
