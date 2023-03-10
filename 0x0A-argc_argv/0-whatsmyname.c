@@ -1,16 +1,15 @@
  #include <stdio.h>
-
+#include "holberton.h"
 /**
- * main - prints its name, followed by a new line.
- * @argc: argument count
- * @argv: arguments
- *
+ * main - prints its name + \n
+ * @argc: number of arguments typed
+ * @argv: array pointing to arguements
  * Return: 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-README.md (void)argc;
+argc = 0;
 
-README.md printf("%s\n", argv[0]);
-README.md return (0);
+printf("%s\n", argv[argc]);
+return (0);
 } 
