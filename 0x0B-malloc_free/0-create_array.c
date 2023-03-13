@@ -1,28 +1,23 @@
- #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-
+#include "holberton.h"
 /**
- * create_array - creates an array of chars,
- * and initializes it with a specific char.
- * @size: the size of the array
- * @c: initial value
- *
- * Return: a pointer to the array, or NULL if it fails
+ * create_array - main entry
+ * @size: size input
+ * @c: char
+ * Return: 0
  */
 char *create_array(unsigned int size, char c)
 {
-char *array;
-unsigned int i;
+	char *array;
+	unsigned int i;
 
-if (size == 0)
-return (NULL);
+	array = malloc(sizeof(char) * size);
 
-array = (char *)malloc(sizeof(char) * size);
-if (array == NULL)
-return (NULL);
+	if (size == 0 || array == NULL)
+		return (NULL);
 
-for (i = 0; i < size; i++)
-array[i] = c;
-
-return (array);
+	for (i = 0; i < size; i++)
+		array[i] = c;
+	return (array);
 }
