@@ -10,20 +10,20 @@
  */
 size_t print_list(const list_t *h)
 {
-README.md int count = 0;
+	int count = 0;
 
-README.md while (h)
-README.md {
-README.md README.md if (h->str == NULL)
-README.md README.md {
-README.md README.md README.md printf("[0] (nil)\n");
-README.md README.md }
-README.md README.md else
-README.md README.md {
-README.md README.md printf("[%d] %s\n", h->len, h->str);
-README.md README.md }
-README.md README.md count++;
-README.md README.md h = h->next;
-README.md }
-README.md return (count);
+	while (h)
+	{
+		if (h->str == NULL)
+		{
+			printf("[0] (nil)\n");
+		}
+		else
+		{
+		printf("[%d] %s\n", h->len, h->str);
+		}
+		count++;
+		h = h->next;
+	}
+	return (count);
 }
